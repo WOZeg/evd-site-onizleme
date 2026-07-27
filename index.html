@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>CEY Analiz · Bakanlık Yetkili Enerji Verimliliği Danışmanlığı (EVD) · Denizli</title>
+  <meta name="description" content="CEY Analiz, T.C. Enerji ve Tabii Kaynaklar Bakanlığı'nca yetkilendirilmiş Enerji Verimliliği Danışmanlık (EVD) şirketi. Sanayi ve bina için etüt, VAP, enerji yöneticisi ve Enerji Kimlik Belgesi. Denizli.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="field-fallback" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>
+    <span>CEY ANALİZ<small>ENERJİ MÜHENDİSLİK</small></span>
+  </a>
+  <nav class="site-nav" id="site-nav" aria-label="Site">
+    <a href="#yetki">YETKİ</a>
+    <a href="#etut">ETÜT</a>
+    <a href="#esikler">EŞİKLER</a>
+    <a href="#vap">VAP</a>
+    <a href="enerji-kimlik-belgesi.html">ENERJİ KİMLİK BELGESİ</a>
+    <a href="iletisim.html">İLETİŞİM</a>
+  </nav>
+  <a class="head-tel" href="tel:+902582646422">0258 264 64 22</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">MENÜ</button>
+</header>
+
+<div class="scale-bar" aria-hidden="true"><span class="scale-tick" data-t=""></span></div>
+
+<main id="main">
+
+  <!-- ============ 01 AÇILIŞ ============ -->
+  <section class="scene hero">
+    <div class="wrap">
+      <p class="eyebrow reveal" id="hero-eyebrow">T.C. ENERJİ VE TABİİ KAYNAKLAR BAKANLIĞI YETKİLİ EVD ŞİRKETİ</p>
+      <h1 class="display" id="hero-h1">ENERJİ <span class="hot">KAYBI</span><br>ÖLÇÜLÜR</h1>
+      <div class="hero-foot">
+        <p class="hero-sub">CEY Analiz, T.C. Enerji ve Tabii Kaynaklar Bakanlığı'nca
+          yetkilendirilmiş bir Enerji Verimliliği Danışmanlık (EVD) şirketidir. Sanayi
+          tesisleri ve binalar için, Denizli'den. Sayfa boyunca alan soğur: etüt böyle
+          çalışır.</p>
+        <div class="hero-jump">
+          <a href="#etut">SANAYİ · ETÜT VE VAP ↓</a>
+          <a href="#esikler">YÖNETMELİK EŞİKLERİ ↓</a>
+          <a href="enerji-kimlik-belgesi.html">BİNA · ENERJİ KİMLİK BELGESİ →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 YETKİ ============ -->
+  <section class="scene scene-paper" id="yetki">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">BAKANLIK SİCİLİ</p>
+        <h2 class="display">SİCİLDE KAYITLI</h2>
+      </div>
+      <div class="register-doc reveal">
+        <div class="register-doc-head">
+          <span>EVCED · Yetkilendirilmiş EVD Şirketleri</span>
+          <span>CEY ANALİZ ENERJİ MÜH. SAN. VE TİC. LTD. ŞTİ.</span>
+        </div>
+        <div class="register-rows">
+          <div class="register-row">
+            <span class="scope">SANAYİ</span>
+            <span class="desc">Sanayi tesislerinde etüt, proje ve danışmanlık</span>
+            <span class="state state-yes">YETKİLİ</span>
+          </div>
+          <div class="register-row">
+            <span class="scope">BİNA</span>
+            <span class="desc">Binalarda etüt, proje ve danışmanlık</span>
+            <span class="state state-yes">YETKİLİ</span>
+          </div>
+          <div class="register-row">
+            <span class="scope">EĞİTİM</span>
+            <span class="desc">Enerji verimliliği eğitimleri</span>
+            <span class="state state-no">YETKİ KAPSAMI DIŞINDA</span>
+          </div>
+        </div>
+        <div class="register-foot">
+          <a href="https://evcedyetkilendirme.enerji.gov.tr/verimlilik/y_yetki_b_a_d_sirketler.aspx"
+             target="_blank" rel="noopener">Kaydı Bakanlık sicilinde doğrulayın ↗</a>
+          <span>Sicil kontrolü: 26.07.2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 ETÜT / SANKEY ============ -->
+  <section class="scene" id="etut">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">SANAYİ · ENERJİ ETÜDÜ</p>
+        <h2 class="display">ETÜT ÖLÇÜMLERİ</h2>
+      </div>
+
+      <div class="spark-cards">
+        <div class="spark-card reveal">
+          <span class="mono">GÜÇ [kW]</span>
+          <svg viewBox="0 0 300 80" aria-hidden="true">
+            <path class="spark s-guc" d="M 0 62 L 15 61 L 30 58 L 45 45 L 60 30 L 75 34 L 90 26 L 105 30 L 120 22 L 135 30 L 150 25 L 165 32 L 180 38 L 195 34 L 210 42 L 225 48 L 240 52 L 255 51 L 270 52 L 285 51 L 300 52"/>
+          </svg>
+          <span class="spark-find">GECE YÜKÜ · İSRAF</span>
+        </div>
+        <div class="spark-card reveal">
+          <span class="mono">cosφ</span>
+          <svg viewBox="0 0 300 80" aria-hidden="true">
+            <path class="spark s-cosfi" d="M 0 20 L 40 21 L 70 22 L 95 30 L 115 44 L 135 48 L 155 42 L 175 46 L 195 36 L 215 26 L 245 23 L 270 22 L 300 22"/>
+          </svg>
+          <span class="spark-find">KOMPANZASYON İHTİYACI</span>
+        </div>
+        <div class="spark-card reveal">
+          <span class="mono">SICAKLIK [°C]</span>
+          <svg viewBox="0 0 300 80" aria-hidden="true">
+            <path class="spark s-sicak" d="M 0 60 L 30 59 L 60 57 L 90 55 L 115 42 L 140 34 L 165 32 L 190 33 L 215 34 L 240 36 L 265 38 L 300 40"/>
+          </svg>
+          <span class="spark-find">ATIK ISI · KAÇAK TESPİT</span>
+        </div>
+      </div>
+
+      <div class="viz-cap">
+        <span><b>TEMSİLİ VERİ</b> · PROFİLLER ETÜTTE ÖLÇÜLÜR</span>
+        <span><a class="svc-more" href="#vap">BULGULARDAN VAP'A ↓</a></span>
+      </div>
+
+      <div class="profile-chips reveal" role="list" aria-label="Etüt çıktı profilleri">
+        <span role="listitem">GİRDİ</span>
+        <span role="listitem">ATIK</span>
+        <span role="listitem">KAYIP-KAÇAK</span>
+        <span role="listitem">VERİMSİZLİK</span>
+        <span role="listitem">İSRAF</span>
+        <span role="listitem">EMİSYON</span>
+        <span role="listitem">ENERJİ YÖNETİM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 EŞİKLER ============ -->
+  <section class="scene scene-paper" id="esikler">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">MEVZUAT EŞİKLERİ</p>
+        <h2 class="display">ENERJİ YÖNETİCİSİ ZORUNLULUĞU</h2>
+      </div>
+
+      <div class="ruler-grid">
+        <svg id="tep-ruler" viewBox="0 0 300 640" role="img"
+             aria-label="TEP ölçeği: 250 TEP kamu binaları, 500 TEP özel ticaret ve hizmet binaları, 1000 TEP sanayi tesisleri eşiği">
+          <line class="axis" x1="60" y1="40" x2="60" y2="600"/>
+          <line class="fill-line" x1="60" y1="600" x2="60" y2="40"/>
+          <g>
+            <line x1="52" y1="600" x2="68" y2="600"/><text x="78" y="604">0</text>
+            <line x1="54" y1="553.3" x2="66" y2="553.3"/>
+            <line x1="54" y1="506.7" x2="66" y2="506.7"/>
+            <line x1="52" y1="460" x2="68" y2="460"/><text x="78" y="464">300</text>
+            <line x1="54" y1="413.3" x2="66" y2="413.3"/>
+            <line x1="54" y1="366.7" x2="66" y2="366.7"/>
+            <line x1="52" y1="320" x2="68" y2="320"/><text x="78" y="324">600</text>
+            <line x1="54" y1="273.3" x2="66" y2="273.3"/>
+            <line x1="54" y1="226.7" x2="66" y2="226.7"/>
+            <line x1="52" y1="180" x2="68" y2="180"/><text x="78" y="184">900</text>
+            <line x1="54" y1="133.3" x2="66" y2="133.3"/>
+            <line x1="54" y1="86.7" x2="66" y2="86.7"/>
+            <line x1="52" y1="40" x2="68" y2="40"/><text x="78" y="44">1200 TEP/YIL</text>
+          </g>
+          <g class="mark">
+            <circle class="mark-dot" cx="60" cy="483.3" r="5"/>
+            <text class="mark-label" x="92" y="479">250 TEP/YIL</text>
+            <text x="92" y="497">Kamu kesimi binaları</text>
+          </g>
+          <g class="mark">
+            <circle class="mark-dot" cx="60" cy="366.7" r="5"/>
+            <text class="mark-label" x="92" y="362">500 TEP/YIL</text>
+            <text x="92" y="380">Özel ticaret ve hizmet binaları</text>
+          </g>
+          <g class="mark">
+            <circle class="mark-dot" cx="60" cy="133.3" r="5"/>
+            <text class="mark-label" x="92" y="129">1.000 TEP/YIL</text>
+            <text x="92" y="147">Sanayi tesisleri · VAP başvuru eşiği</text>
+          </g>
+        </svg>
+
+        <div class="ruler-cards">
+          <div class="ruler-card reveal">
+            <span class="val">≥ 1.000<small>TEP/YIL</small></span>
+            <span class="who">Yıllık enerji tüketimi 1000 TEP ve üzeri olan sanayi tesisleri</span>
+          </div>
+          <div class="ruler-card reveal">
+            <span class="val">20.000<small>M²</small> · 500<small>TEP</small></span>
+            <span class="who">Toplam inşaat alanı 20.000 m² veya enerji tüketimi 500 TEP/yıl olan
+              özel sektöre ait ticaret ve hizmet binaları</span>
+          </div>
+          <div class="ruler-card reveal">
+            <span class="val">10.000<small>M²</small> · 250<small>TEP</small></span>
+            <span class="who">Toplam inşaat alanı 10.000 m² veya enerji tüketimi 250 TEP/yıl olan
+              kamu kesimi binaları</span>
+          </div>
+          <div class="ruler-card reveal">
+            <span class="val">≥ 100<small>MW</small></span>
+            <span class="who">Kurulu gücü 100 MW ve üzeri olan elektrik üretim tesisleri
+              (otoprodüktör lisansı sahipleri hariç)</span>
+          </div>
+          <p class="threshold-src">Kaynak: 5627 sayılı Enerji Verimliliği Kanunu'na bağlı, Enerji
+            Kaynaklarının ve Enerjinin Kullanımında Verimliliğin Artırılmasına Dair Yönetmelik.
+            Eşik kapsamındaysanız: <a href="iletisim.html">iletişim</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 VAP ============ -->
+  <section class="scene" id="vap">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">SANAYİ · DESTEK BAŞVURUSU</p>
+        <h2 class="display">VERİMLİLİK ARTIRICI PROJE</h2>
+      </div>
+
+      <p class="month-note reveal">Destek başvuru penceresi: yalnızca Ocak.</p>
+
+      <div class="statute-on-dark reveal">
+        <blockquote>
+          <p>Verimlilik Artırıcı Proje (VAP) Hazırlanması — Enerji verimli ekipman ve sistem
+            kullanımı, onarım, yalıtım, modifikasyon, rehabilitasyon ve proses düzenleme gibi
+            yollarla; gereksiz enerji kullanımının, atık enerjinin, enerji kayıp ve
+            kaçaklarının önlenmesi veya en aza indirilmesi ile birlikte atık enerjinin geri
+            kazanılması gibi konuları içine alan projeler hazırlanmaktadır.</p>
+          <p>Verimlik artırıcı projelerinin desteklenmesini isteyen endüstriyel işletmeler,
+            Genel Müdürlük tarafından tebliğ olarak yayımlanan usul ve esaslara uygun olarak
+            şirketlere hazırlattıkları projelerini her yıl Ocak ayı içinde Genel Müdürlüğe
+            sunar.</p>
+        </blockquote>
+        <cite>CEY Analiz, VAP hizmet tanımı</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 EKB ============ -->
+  <section class="scene" id="ekb">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">BİNA</p>
+        <h2 class="display">ENERJİ KİMLİK BELGESİ: A'DAN G'YE</h2>
+      </div>
+
+      <div class="ekb-scale" role="img"
+           aria-label="Enerji Kimlik Belgesi sınıf ölçeği, A en iyi, G en kötü; yeni binada asgari sınıf C">
+        <div class="ekb-step" data-g="A">A</div>
+        <div class="ekb-step" data-g="B">B</div>
+        <div class="ekb-step min-c" data-g="C">C</div>
+        <div class="ekb-step" data-g="D">D</div>
+        <div class="ekb-step" data-g="E">E</div>
+        <div class="ekb-step" data-g="F">F</div>
+        <div class="ekb-step" data-g="G">G</div>
+      </div>
+
+      <p class="ekb-note">"Enerji Kimlik Belgesi binanın sınıflandırılması A'dan G'ye doğru
+        olmaktadır. A sınıfı binanın alabileceği en iyi sınıf iken G sınıfı en kötüdür."
+        Belge, yapıldığı tarihten itibaren 10 yıl geçerlidir.</p>
+      <p style="margin-top: 26px;"><a class="svc-more" href="enerji-kimlik-belgesi.html">BELGE SÜRECİ VE GEREKLİ EVRAKLAR →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ 07 BELGELER ============ -->
+  <section class="scene scene-paper" id="belgeler">
+    <div class="wrap">
+      <div class="scene-head">
+        <p class="eyebrow">BELGELER</p>
+        <h2 class="display">KURULUŞ VE YETKİLER</h2>
+      </div>
+      <div class="cred-line">
+        <div class="cred reveal">
+          <time datetime="2016-06-24">24.06.2016</time>
+          <h3>Kuruluş</h3>
+          <p>Enerji verimliliği, mekanik tesisat projelendirme ve enerji alanında muayene
+            kuruluşu olarak hizmet vermek üzere kuruldu.</p>
+        </div>
+        <div class="cred reveal">
+          <time datetime="2017-06-22">22.06.2017</time>
+          <h3>"Etüt, Proje ve Danışmanlık" yetki belgesi</h3>
+          <p>5627 sayılı Enerji Verimliliği Kanunu ve 28097 sayılı Resmî Gazete'de yayımlanan
+            Yönetmelik kapsamında, T.C. Enerji ve Tabii Kaynaklar Bakanlığı'ndan.</p>
+        </div>
+        <div class="cred reveal">
+          <time datetime="2020-09-28">28.09.2020</time>
+          <h3>"Kağıt ve Tekstil" uzmanlık yetkisi</h3>
+          <p>Kağıt ve tekstil uzmanlık alanında "Etüt, Proje ve Danışmanlık" yetki belgesi,
+            T.C. Enerji ve Tabii Kaynaklar Bakanlığı'ndan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 KAPANIŞ ============ -->
+  <section class="scene finale" id="iletisim">
+    <div class="wrap">
+      <h2 class="display">DENİZLİ'DEN, İKİ KANAL</h2>
+      <div class="contact-grid">
+        <a class="contact-cell reveal" href="tel:+902582646422">
+          <span class="mono">TELEFON</span>
+          <strong>0258 264 64 22</strong>
+        </a>
+        <a class="contact-cell reveal" href="mailto:bilgi@ceyanaliz.com">
+          <span class="mono">E-POSTA</span>
+          <strong>bilgi@ceyanaliz.com</strong>
+        </a>
+        <div class="contact-cell reveal">
+          <span class="mono">KONUM</span>
+          <strong>Denizli</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div>
+      <h4>CEY ANALİZ</h4>
+      <p class="foot-note">CEY Analiz Enerji Mühendislik Sanayi ve Ticaret Limited Şirketi.
+        Enerji Verimliliği Danışmanlık (EVD) şirketi, Denizli.</p>
+    </div>
+    <div>
+      <h4>İLETİŞİM</h4>
+      <ul>
+        <li><a href="tel:+902582646422">0258 264 64 22</a></li>
+        <li><a href="mailto:bilgi@ceyanaliz.com">bilgi@ceyanaliz.com</a></li>
+        <li><a href="iletisim.html">Denizli</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>SİTE</h4>
+      <ul>
+        <li><a href="enerji-kimlik-belgesi.html">Enerji Kimlik Belgesi</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="https://evcedyetkilendirme.enerji.gov.tr/verimlilik/y_yetki_b_a_d_sirketler.aspx"
+               target="_blank" rel="noopener">Bakanlık sicili ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-legal">
+    <span>© 2026 CEY Analiz Enerji Mühendislik San. ve Tic. Ltd. Şti.</span>
+    <span>EVD yetki alanları: Sanayi · Bina · sicil kontrolü 26.07.2026</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"
+        integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"
+        integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"
+        integrity="sha384-SWJ0lLVRoipvHh59xj0pL7uC7Ih51F+5smaFtrG+2nr+TlDZU5SYJHmxfolbeNTr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/DrawSVGPlugin.min.js"
+        integrity="sha384-pfZbCpJUiv0Y8664JafRbiKcx2uJmjNjVCoPXGwaxvTSbO11M0htzeEeTC6KSaqa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/CustomEase.min.js"
+        integrity="sha384-bk/dsRkKcZYqsQ8OzP86S+TVAAI6D7V0ApKLhj3ssXqZPNYYO77EXxOrTX+pp1g/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollToPlugin.min.js"
+        integrity="sha384-veAUjjPpN+DmI16CXyo3Anb29Br9lR3S2f9R3OhNYpaCiUIRwgwiGcQsLT/YTs72" crossorigin="anonymous"></script>
+<script src="js/field.js" defer></script><script src="js/main.js" defer></script>
+</body>
+</html>
