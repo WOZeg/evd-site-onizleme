@@ -135,12 +135,12 @@
   let dpr = 1;
   function resize() {
     dpr = Math.min(devicePixelRatio || 1, innerWidth < 700 ? 1.25 : 1.5);
-    canvas.width = Math.round(innerWidth * dpr);
-    canvas.height = Math.round(innerHeight * dpr);
+    canvas.width = Math.round(canvas.clientWidth * dpr);
+    canvas.height = Math.round(canvas.clientHeight * dpr);
     gl.viewport(0, 0, canvas.width, canvas.height);
   }
   resize();
-  addEventListener("resize", resize);
+  new ResizeObserver(resize).observe(canvas);
 
   const baseCool = Math.min(0.9, Math.max(0, parseFloat(document.body.dataset.cool || "0")));
   const state = {
